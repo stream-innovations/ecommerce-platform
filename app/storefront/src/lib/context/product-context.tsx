@@ -55,7 +55,7 @@ export const ProductProvider = ({
     setOptions(optionObj)
   }, [product])
 
-  // memorized record of the product's variants
+  // memoized record of the product's variants
   const variantRecord = useMemo(() => {
     const map: Record<string, Record<string, string>> = {}
 
@@ -72,7 +72,7 @@ export const ProductProvider = ({
     return map
   }, [variants])
 
-  // memorized function to check if the current options are a valid variant
+  // memoized function to check if the current options are a valid variant
   const variant = useMemo(() => {
     let variantId: string | undefined = undefined
 
@@ -96,7 +96,7 @@ export const ProductProvider = ({
     return !variant
   }, [variant])
 
-  // memorized function to get the price of the current variant
+  // memoized function to get the price of the current variant
   const formattedPrice = useMemo(() => {
     if (variant && cart?.region) {
       return formatVariantPrice({ variant, region: cart.region })

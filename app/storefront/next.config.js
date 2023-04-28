@@ -5,7 +5,7 @@ module.exports = withStoreConfig({
     features: store.features,
     reactStrictMode: true,
     images: {
-        domains: ["ec2-54-157-79-121.compute-1.amazonaws.com", "https://streampay.shop/images", "localhost"],
+        domains: ["medusa-public-images.s3.eu-west-1.amazonaws.com", "@ec2-34-242-199-141.eu-west-1.compute.amazonaws.com", "localhost"],
     },
 })
 

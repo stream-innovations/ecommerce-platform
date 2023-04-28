@@ -44,8 +44,8 @@ interface StoreProps {
 }
 
 const IS_SERVER = typeof window === "undefined"
-const CART_KEY = "cart_id"
-const REGION_KEY = "region"
+const CART_KEY = "medusa_cart_id"
+const REGION_KEY = "medusa_region"
 
 export const StoreProvider = ({ children }: StoreProps) => {
   const { cart, setCart, createCart, updateCart } = useCart()

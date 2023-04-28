@@ -7,7 +7,7 @@ import { NextPageWithLayout } from "types/global"
 const Cart: NextPageWithLayout = () => {
   return (
     <>
-      <Head title="Shopping Cart" description="View your shopping Cart" />
+      <Head title="Shopping Bag" description="View your shopping bag" />
       <CartTemplate />
     </>
   )
